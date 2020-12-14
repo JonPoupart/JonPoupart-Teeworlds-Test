@@ -23,7 +23,7 @@ COPY /USERDIR/Teeworlds/maps/DanMap1.map /root/.local/share/teeworlds/maps/DanMa
 
 #-----MISC RUNS-----#
 #Changes permissions on the run.sh file? I'm not sure yet
-#RUN chmod +x /run.sh
+RUN chmod +x /run.sh
 #This tells the container what port we want
 EXPOSE 8303/udp
 

@@ -22,7 +22,7 @@ COPY /data/DanS1VM1.cfg /usr/share/games/teeworlds/data/TW_secretproject.cfg
 #USERDIR - This is where the maps go
 #COPY /USERDIR/Teeworlds /root/.local/share/teeworlds
 #COPY /USERDIR/Teeworlds/maps/DanMap1.map /root/.local/share/teeworlds/maps/DanMap1.map
-COPY /USERDIR/Teeworlds/maps/DanMap1.map /root/.local/share/teeworlds/maps/TrevDesertFinalSP
+COPY /USERDIR/Teeworlds/maps/DanMap1.map /root/.local/share/teeworlds/maps/TrevDesertFinalSP.map
 
 #-----MISC RUNS-----#
 #Changes permissions on the run.sh file? I'm not sure yet

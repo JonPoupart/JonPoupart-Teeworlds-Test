@@ -3,7 +3,8 @@ FROM ubuntu:20.04
 
 #-----NETWORK STUFF-----#
 #This tells US what port we want
-ENV port 8303
+#ENV port 8303
+ENV port 8303-8310
 
 #-----OS STUFF-----#
 #Updates our OS
@@ -25,7 +26,8 @@ COPY /USERDIR/Teeworlds/maps/DanMap1.map /root/.local/share/teeworlds/maps/DanMa
 #Changes permissions on the run.sh file? I'm not sure yet
 RUN chmod +x /run.sh
 #This tells the container what port we want
-EXPOSE 8303/udp
+#EXPOSE 8303/udp
+EXPOSE 8303-8310/udp
 
 #-----CONTAINER COMMAND-----#
 #Runs the run.sh file

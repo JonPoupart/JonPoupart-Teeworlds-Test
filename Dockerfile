@@ -14,14 +14,16 @@ RUN apt-get install -y teeworlds-server pwgen
 
 #-----FILES AND DIRECTORIES-----#
 #run.sh - when this is run, it tells teeworlds-server to run a config
-COPY run.sh /run.sh
+#-
+#COPY run.sh /run.sh
 #DATADIR - This is where the configs go
-#COPY /data /usr/share/games/teeworlds/data
-#COPY /data/DanS1VM1.cfg /usr/share/games/teeworlds/data/DanS1VM1.cfg
+##COPY /data /usr/share/games/teeworlds/data
+COPY /data/DanS1VM1.cfg /usr/share/games/teeworlds/data/DanS1VM1.cfg
 COPY /data/TW_secretproject.cfg /usr/share/games/teeworlds/data/TW_secretproject.cfg
+#-
 #USERDIR - This is where the maps go
 #COPY /USERDIR/Teeworlds /root/.local/share/teeworlds
-#COPY /USERDIR/Teeworlds/maps/DanMap1.map /root/.local/share/teeworlds/maps/DanMap1.map
+COPY /USERDIR/Teeworlds/maps/DanMap1.map /root/.local/share/teeworlds/maps/DanMap1.map
 COPY /USERDIR/Teeworlds/maps/TrevDesertFinalSP.map /root/.local/share/teeworlds/maps/TrevDesertFinalSP.map
 
 #-----MISC RUNS-----#
@@ -33,5 +35,5 @@ EXPOSE 8303-8310/udp
 
 #-----CONTAINER COMMAND-----#
 #Runs the run.sh file
-CMD ["/run.sh"]  
+#CMD ["/run.sh"]  
 #CMD ["cd /home"]

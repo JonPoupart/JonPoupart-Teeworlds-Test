@@ -28,7 +28,8 @@ COPY /USERDIR/Teeworlds/maps/TrevDesertFinalSP.map /root/.local/share/teeworlds/
 
 #-----MISC RUNS-----#
 #Changes permissions on the run.sh file? I'm not sure yet
-RUN chmod +x /run.sh
+#RUN chmod +x /run.sh
+#-
 #This tells the container what port we want
 #EXPOSE 8303/udp
 EXPOSE 8303-8310/udp
